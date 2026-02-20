@@ -4,8 +4,7 @@
   "description": "Go Streaming Indonesia - Professional event production services",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'No build needed - static site'",
-    "start": "echo 'Static site ready'"
+    "build": "echo 'Static site - no build needed'"
   },
   "keywords": ["streaming", "event", "balikpapan", "multicam", "livestream"],
   "author": "Go Streaming Indonesia",
