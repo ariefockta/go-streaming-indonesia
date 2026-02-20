@@ -1,0 +1,14 @@
+name = "gostreamingid"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "."
+
+[build]
+command = ""
+cwd = ""
+watch_dirs = []
+
+[env.production]
+name = "gostreamingid"
+route = "gostreamingid.com/*"

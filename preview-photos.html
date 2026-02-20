@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Foto Projects - Go Streaming Indonesia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #D92323;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .photo-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .photo-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .photo-info {
+            padding: 15px;
+        }
+        .photo-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .photo-path {
+            font-size: 12px;
+            color: #666;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Preview Foto Projects</h1>
+        <div class="grid">
+            <div class="photo-card">
+                <img src="/public/projects/projects-1.jpeg" alt="Project 1">
+                <div class="photo-info">
+                    <div class="photo-name">Corporate Event</div>
+                    <div class="photo-path">/public/projects/projects-1.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/projects-2.jpeg" alt="Project 2">
+                <div class="photo-info">
+                    <div class="photo-name">Event Production</div>
+                    <div class="photo-path">/public/projects/projects-2.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/projects-3.jpeg" alt="Project 3">
+                <div class="photo-info">
+                    <div class="photo-name">Project 3</div>
+                    <div class="photo-path">/public/projects/projects-3.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/projects-4.jpeg" alt="Project 4">
+                <div class="photo-info">
+                    <div class="photo-name">Project 4</div>
+                    <div class="photo-path">/public/projects/projects-4.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/projects-5.jpeg" alt="Project 5">
+                <div class="photo-info">
+                    <div class="photo-name">Project 5</div>
+                    <div class="photo-path">/public/projects/projects-5.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/live-3.jpeg" alt="Live 3">
+                <div class="photo-info">
+                    <div class="photo-name">Live Event 3</div>
+                    <div class="photo-path">/public/projects/live-3.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/live-4.jpeg" alt="Live 4">
+                <div class="photo-info">
+                    <div class="photo-name">Live Event 4</div>
+                    <div class="photo-path">/public/projects/live-4.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/live-6.jpeg" alt="Live 6">
+                <div class="photo-info">
+                    <div class="photo-name">Live Event 6</div>
+                    <div class="photo-path">/public/projects/live-6.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/photobooth-1.jpeg" alt="Photobooth 1">
+                <div class="photo-info">
+                    <div class="photo-name">Photobooth 1</div>
+                    <div class="photo-path">/public/projects/photobooth-1.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/photobooth-3.jpeg" alt="Photobooth 3">
+                <div class="photo-info">
+                    <div class="photo-name">Photobooth 3</div>
+                    <div class="photo-path">/public/projects/photobooth-3.jpeg</div>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="/public/projects/photobooth-4.jpeg" alt="Photobooth 4">
+                <div class="photo-info">
+                    <div class="photo-name">Photobooth 4</div>
+                    <div class="photo-path">/public/projects/photobooth-4.jpeg</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

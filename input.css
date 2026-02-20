@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gradient-red {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#D92323] to-[#FF5252];
+  }
+  .btn-primary {
+    @apply bg-[#D92323] hover:bg-[#B01818] text-white shadow-lg shadow-red-500/30 hover:shadow-red-500/50 hover:brightness-110 active:scale-95 transition-all duration-300;
+  }
+  .bg-gradient-hero {
+    @apply bg-gradient-to-br from-slate-900 via-[#2a0a0a] to-slate-900;
+  }
+  .card-hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-red-900/10 hover:border-b-4 hover:border-b-primary;
+  }
+  .image-zoom-container {
+    @apply overflow-hidden rounded-3xl;
+  }
+  .image-zoom-target {
+    @apply transition-transform duration-700 ease-out;
+  }
+  .group:hover .image-zoom-target {
+    @apply scale-110;
+  }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+/* Mobile menu active state */
+#mobileMenu a:active {
+  background-color: #D92323 !important;
+  color: #fff !important;
+}
