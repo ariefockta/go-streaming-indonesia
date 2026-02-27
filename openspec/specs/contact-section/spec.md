@@ -5,6 +5,31 @@ Provide multiple contact methods including NAP display, embedded map, and form t
 
 ## Requirements
 
+### Requirement: Display contact information with WhatsApp direct link
+
+The contact section SHALL display NAP with WhatsApp direct link and complete service list.
+
+#### Scenario: WhatsApp direct link in footer
+- **WHEN** user views footer contact section
+- **THEN** should display WhatsApp icon (SVG)
+- **THEN** number should be formatted as +62 853-9313-2410
+- **THEN** clicking should open WhatsApp link to https://wa.me/6285393132410
+
+#### Scenario: Complete service list in footer
+- **WHEN** user views footer services section
+- **THEN** should display 6 services:
+  - Multicam & Livestream
+  - LED Videotron
+  - Sound System
+  - Photobooth 360
+  - Lighting System
+  - Event Organizer
+
+#### Scenario: Google Maps with accurate marker
+- **WHEN** user views contact section
+- **THEN** map should show accurate location
+- **THEN** should display marker/pin for "Go Streaming Indonesia"
+
 ### Requirement: Display contact information with map
 
 The contact section SHALL display NAP (Name, Address, Phone) with embedded Google Map.

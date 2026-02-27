@@ -5,6 +5,36 @@ Showcase all 8 services with clear descriptions, benefits, and direct WhatsApp i
 
 ## Requirements
 
+### Requirement: Display service information with accuracy
+
+The service catalog SHALL display professional service information with accurate descriptions and equipment specifications.
+
+#### Scenario: Multicam service caption accuracy
+- **WHEN** user views Multicam service section
+- **THEN** caption should say "broadcast profesional" not "broadcast televisi"
+
+#### Scenario: Service images from real projects
+- **WHEN** user views Multicam service
+- **THEN** image should be from `/public/multicam.jpeg`
+- **WHEN** user views LED Videotron service
+- **THEN** image should be from `/public/led.jpeg`
+
+#### Scenario: LED Videotron SEO optimization
+- **WHEN** user views LED Videotron section
+- **THEN** text should include keyword "sewa videotron" for SEO
+
+#### Scenario: Photobooth headline accuracy
+- **WHEN** user views Photobooth section
+- **THEN** headline should be "Photobooth Cetak dan Videobooth 360"
+
+#### Scenario: Equipment specifications transparency
+- **WHEN** user views Multicam service details
+- **THEN** specifications should include:
+  - Sony PXW Z190 4K
+  - Switcher DataVideo HS1300
+  - Wireless Video System Hollyland
+  - Clearcomm Hollyland
+
 ### Requirement: Display 8 service cards
 
 The service catalog SHALL display all 8 services in a grid layout.

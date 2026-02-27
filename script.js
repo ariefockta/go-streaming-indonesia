@@ -30,10 +30,10 @@ if (hamburger && mobileMenu) {
 
 // Portfolio Filter
 const filterBtns = document.querySelectorAll('.portfolio-filter-btn');
-const portfolioGrid = document.querySelector('#portfolio .grid');
+const portfolioContainer = document.querySelector('#portfolio .overflow-x-auto > div');
 
-if (filterBtns.length > 0 && portfolioGrid) {
-    const portfolioItems = portfolioGrid.querySelectorAll('[class*="col-span"]');
+if (filterBtns.length > 0 && portfolioContainer) {
+    const portfolioItems = portfolioContainer.querySelectorAll('[data-category]');
     
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -47,20 +47,16 @@ if (filterBtns.length > 0 && portfolioGrid) {
             btn.classList.remove('bg-white', 'text-slate-600');
             btn.classList.add('bg-primary', 'text-white', 'shadow-lg', 'shadow-red-500/30');
             
-            // Filter items
+            // Filter items with grid-column adjustment
             portfolioItems.forEach(item => {
-                const categoryText = item.querySelector('.text-primary')?.textContent.toLowerCase();
+                const category = item.getAttribute('data-category');
                 
                 if (filter === 'all') {
-                    item.style.display = '';
-                } else if (filter === 'livestream' && (categoryText?.includes('siaran') || categoryText?.includes('multikamera'))) {
-                    item.style.display = '';
-                } else if (filter === 'booth' && categoryText?.includes('booth')) {
-                    item.style.display = '';
-                } else if (filter === 'videotron' && categoryText?.includes('videotron')) {
-                    item.style.display = '';
+                    item.classList.remove('hidden');
+                } else if (category === filter) {
+                    item.classList.remove('hidden');
                 } else {
-                    item.style.display = 'none';
+                    item.classList.add('hidden');
                 }
             });
         });
