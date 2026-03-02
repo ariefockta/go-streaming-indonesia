@@ -1,0 +1,22 @@
+Untuk meningkatkan performance score dari 75 ke 85+, tambahkan atribut berikut pada gambar client:
+
+GANTI SEMUA gambar client dengan menambahkan width, height, dan loading="lazy":
+
+1. Kementerian PUPR: width="80" height="80" loading="lazy"
+2. Kementerian Perumahan Rakyat: width="160" height="40" loading="lazy"
+3. Kementerian Keuangan: width="86" height="80" loading="lazy"
+4. Kementerian Perhubungan: width="69" height="80" loading="lazy"
+5. Pemprov Kaltim: width="65" height="80" loading="lazy"
+6. Pemkot Balikpapan: width="67" height="80" loading="lazy"
+7. Kementerian Kominfo: width="80" height="80" loading="lazy"
+8. Adhi Karya: width="80" height="80" loading="lazy"
+9. Hutama Karya: width="112" height="80" loading="lazy"
+10. PP (Persero): width="123" height="80" loading="lazy"
+11. Waskita Karya: width="91" height="80" loading="lazy"
+12. Abipraya: width="83" height="80" loading="lazy"
+13. Pertamina: width="176" height="51" loading="lazy"
+14. Kementerian Kesehatan: width="136" height="96" loading="lazy"
+
+Contoh:
+DARI: <img src="/public/clients/pu.jpg" alt="Kementerian PUPR" class="max-h-20 max-w-full object-contain">
+JADI: <img src="/public/clients/pu.jpg" alt="Kementerian PUPR" class="max-h-20 max-w-full object-contain" width="80" height="80" loading="lazy">
